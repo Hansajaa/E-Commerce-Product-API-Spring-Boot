@@ -1,2 +1,12 @@
 server:
   port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/clothify_store
+    username: root
+    password: Hansaja@1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
