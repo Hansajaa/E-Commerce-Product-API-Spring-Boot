@@ -2,9 +2,7 @@ package org.clothify.Service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.clothify.Service.ProductService;
-import org.clothify.entity.ImageEntity;
 import org.clothify.entity.ProductEntity;
-import org.clothify.model.Image;
 import org.clothify.model.Product;
 import org.clothify.repository.ProductRepository;
 import org.modelmapper.ModelMapper;
