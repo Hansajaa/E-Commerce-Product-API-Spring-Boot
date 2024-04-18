@@ -31,4 +31,7 @@ public class ProductEntity {
             @JoinColumn(name = "image_id")
     })
     private Set<ImageEntity> images;
+
+    @ManyToMany(mappedBy = "items")
+    private Set<OrderEntity> orders;
 }

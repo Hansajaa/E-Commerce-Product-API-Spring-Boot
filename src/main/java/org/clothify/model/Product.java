@@ -14,6 +14,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
+    private Long id;
     private String name;
     private String description;
     private Integer quantity;
