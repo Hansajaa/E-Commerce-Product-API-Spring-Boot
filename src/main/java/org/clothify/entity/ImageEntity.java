@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,4 +25,7 @@ public class ImageEntity {
     private String type;
     @Column(length = 900000000)
     private byte[] data;
+
+    @ManyToMany(mappedBy = "images")
+    private Set<ProductEntity> products;
 }
