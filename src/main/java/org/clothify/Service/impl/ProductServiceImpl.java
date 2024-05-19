@@ -47,7 +47,7 @@ public class ProductServiceImpl implements ProductService {
 //    Image upload to Drive location
     public String uploadImageToDrive(File file) {
         try{
-            String folderId = "1GM4Ft8EiEWkoNq2TdyfGe75KPWDyFWi3";
+            String folderId = "1OSSkAexCOtJuJjFvrHsCOPeim0oU71YP";
             Drive drive = createDriveService();
             com.google.api.services.drive.model.File fileMetaData = new com.google.api.services.drive.model.File();
             fileMetaData.setName(file.getName());
@@ -55,7 +55,8 @@ public class ProductServiceImpl implements ProductService {
             FileContent mediaContent = new FileContent("image/jpeg",file);
             com.google.api.services.drive.model.File uploadedFile = drive.files().create(fileMetaData, mediaContent)
                     .setFields("id").execute();
-            String imageUrl = "https://drive.google.com/uc?exports=view&id="+uploadedFile.getId();
+//            String imageUrl = "https://drive.google.com/uc?exports=view&id="+uploadedFile.getId();
+            String imageUrl = "https://drive.google.com/file/d/"+uploadedFile.getId()+"/preview";
             log.info("IMAGE URL: "+imageUrl);
             file.delete();
             return imageUrl;
