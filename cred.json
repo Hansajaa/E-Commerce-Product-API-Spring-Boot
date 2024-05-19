@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "clothify-423523",
+  "private_key_id": "6817abbde2fc2a91e820a59c17109ffd52908197",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCxbfdze9OVQR/p\nlddanSU/tJ9pb+7cYBY27tGNefpdRexOq9r4e2EzrBwKsH8AaCx4c5RbSODxn85o\ndUo5E1tqaExzqZ5jVvTGma8UsiwiL3jxYioqa2E/jdsVCZDIo+5qT4xOWL+SdULP\nZ+axl6HtRfgkU+Re8S04zugMfLSNSEMt+9cHkwY/AOhjQst9XTlEUiaYt1VNTl7z\n2+Io28iY56R0fPxvVtl+CSXgt/FeeViT5FiZZA5GHWgg+e/03TIZ3I+ThXY3hKLo\n4LklWYK/VDGpRSb33/KAVOfdHrZA5X3L/Jf3q+GP/tOfYMkw9Z+L05nG6w4zqowA\nz4KL6Qp5AgMBAAECggEAA6+ep+oHI78mHBKuViYUm4WzmBuosTBX1c1RUiiaEGz+\n80Vzt5zMkKe/L2OqR8ZiQiBYkSrq7Wod/iKNp7Dkwcmn6PE5pqOsUyHnNr1a2Fz3\nHMCm0pnHe+wFBKNdvCVXsyKy7f++/xpriGaGruLRDN5awNpzUJufDmKSBIxkrdit\nHFP4PebO2bmK0lf3f50L89pXv+IIC5sACDlUSGRr9tf+5QAg5ab7zdaOJpOerNoa\nCUO5Xb9DnXYLut8ZXtYN2Vf24B4cyWcKpQCbtAh1YP26RsQ1Ihw8BRDWHElzyHcy\ngHdIBeEJomn0dC+jlqerYU7wOhOiC6d6PmV1yPi+7wKBgQDcks0Mbix7PN1ZwiMr\n/L9Ul9Bz2Jn0MYMiMAFw/zZPjoF7Q+HaltThctPImT3fr1GyIkrqelvH5EoIs4r7\n/vJUpiuv8B528bAOu5fIKxyIScdbkPA26SdTKj+ZR9mo2ddxo41i3fkrmCi6JLap\nCTMwBe8q61L6C8mLkMKuMt/nLwKBgQDN7T3qHjugD7JzGtE+vzi4yciQxNtNDs+5\nYqs+6uaOtTreozRk6z0orrmk5J4HcSXKeerqab+42UmDKxd5ePyxYOxX3eGb/cED\n23H8m9FZVCe4k2YpQJLN6SXqDxma0KLgsVwH2XmkTXdbu4RHxh/hAIVIx4BdPqA+\nyuxcTge+1wKBgQCUWNM5kfuuot/IV25qTiGsVjJnR307o/UrEBhYE/1GAnUJHz2O\nUzU3r4/KcW4QvAv4/2FdVA/YX6x/L6nBE9WNovjs6lTC8IfVUMujX4NgEibXaaJ1\ne9fr8hU2FQHJs0FX94TGwr2rWTnC/6AuDbb0jHkvZ3e2HileCW011ZeLFwKBgQCQ\nbCGvL5Lrt/aUaat00VGrr8EdXyLa0Vd4Ei49yyr1zT7DZDzbxmu3O4txjPEUERPL\nBGRwEMhokOPQvYkSJXs7v9kh6rhO2dHjraUs3+8cMjxFZAMTTXloNmrj08FGZarF\n4T3FN43rYHUkfcfROq+i8uWHXHu3abOjNlg8iHFAMwKBgQCiVWrWxFIKcmwLzVdq\nZ+XTHeKkK6qzrbyA0FFr+em8Rp2e0m3RyeZdlhWGgpU65iQQ9R5dy+tleFHylwxi\ndIc5rYBEc1e61AoPna/G35ZfGwblup7lh0nQbdxTrRI7G7hg3ROPI/pj0/gLvgNR\nqbaTUSOcqiDlV5GCEl4hVemuGg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "clothify@clothify-423523.iam.gserviceaccount.com",
+  "client_id": "105775156793784126576",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/clothify%40clothify-423523.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

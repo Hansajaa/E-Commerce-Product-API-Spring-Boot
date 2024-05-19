@@ -21,16 +21,7 @@ public class ProductEntity {
     private Integer quantity;
     private Double price;
     private String category;
-
-    @ManyToMany
-    @JoinTable(name = "product_image",
-    joinColumns = {
-            @JoinColumn(name = "product_id")
-    },
-    inverseJoinColumns = {
-            @JoinColumn(name = "image_id")
-    })
-    private Set<ImageEntity> images;
+    private String imageUrl;
 
     @ManyToMany(mappedBy = "items")
     private Set<OrderEntity> orders;
