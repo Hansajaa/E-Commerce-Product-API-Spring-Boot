@@ -24,7 +24,7 @@ public class ProductController {
     final ProductService service;
 
     @PostMapping("/add")
-    public Boolean addProduct(@RequestParam("file") MultipartFile file, @ModelAttribute Product product) throws IOException {
+    public ProductEntity addProduct(@RequestParam("file") MultipartFile file, @ModelAttribute Product product) throws IOException {
 
         if (file.isEmpty()){
             return service.addProduct(product);

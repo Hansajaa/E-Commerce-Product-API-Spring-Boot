@@ -78,19 +78,18 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Boolean addProduct(File file, Product product){
+    public ProductEntity addProduct(File file, Product product){
         String imageUrl = uploadImageToDrive(file);
         ProductEntity entity = mapper.map(product, ProductEntity.class);
         entity.setImageUrl(imageUrl);
-        repository.save(entity);
-        return true;
+        return repository.save(entity);
     }
 
     @Override
-    public Boolean addProduct(Product product) {
+    public ProductEntity addProduct(Product product) {
         ProductEntity entity = mapper.map(product, ProductEntity.class);
-        repository.save(entity);
-        return true;
+        return repository.save(entity);
+
     }
 
     @Override

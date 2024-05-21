@@ -8,8 +8,8 @@ import java.util.List;
 
 public interface ProductService {
 
-    Boolean addProduct(File file, Product product);
-    Boolean addProduct(Product product);
+    ProductEntity addProduct(File file, Product product);
+    ProductEntity addProduct(Product product);
     List<ProductEntity> getAllProducts();
 //    void saveImage(ImageEntity image);
 //
