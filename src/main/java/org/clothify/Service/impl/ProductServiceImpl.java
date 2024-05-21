@@ -93,6 +93,21 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public ProductEntity updateProduct(File file, Product product) {
+        String imageUrl = uploadImageToDrive(file);
+        ProductEntity entity = mapper.map(product, ProductEntity.class);
+        entity.setImageUrl(imageUrl);
+        ProductEntity productEntity = repository.save(entity);
+        return productEntity;
+    }
+
+    @Override
+    public ProductEntity updateProduct(Product product) {
+        ProductEntity entity = mapper.map(product, ProductEntity.class);
+        return repository.save(entity);
+    }
+
+    @Override
     public List<ProductEntity> getAllProducts() {
         List<ProductEntity> entityList = repository.findAll();
         return entityList;

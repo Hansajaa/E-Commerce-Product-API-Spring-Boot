@@ -36,6 +36,24 @@ public class ProductController {
         return service.addProduct(tempFile,product);
     }
 
+    @PutMapping("/put")
+    public ProductEntity updateProduct(@RequestParam("file") MultipartFile file, @ModelAttribute Product product){
+
+        if(file.isEmpty()){
+            return service.updateProduct(product);
+        }
+
+        try {
+            File tempFile = File.createTempFile("temp",null);
+            file.transferTo(tempFile);
+
+            return service.updateProduct(tempFile,product);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 
     @GetMapping("get-all")
     public ResponseEntity<List<ProductEntity>> getAllProducts(){

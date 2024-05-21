@@ -10,6 +10,8 @@ public interface ProductService {
 
     ProductEntity addProduct(File file, Product product);
     ProductEntity addProduct(Product product);
+    ProductEntity updateProduct(File file, Product product);
+    ProductEntity updateProduct( Product product);
     List<ProductEntity> getAllProducts();
 //    void saveImage(ImageEntity image);
 //
