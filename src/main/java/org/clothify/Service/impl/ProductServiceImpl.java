@@ -122,6 +122,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<ProductEntity> getAllBabyProducts() {
+        List<ProductEntity> babyProducts = repository.findAllByCategory("Baby");
+        return babyProducts;
+    }
+
+    @Override
     public List<ProductEntity> getAllProducts() {
         List<ProductEntity> entityList = repository.findAll();
         return entityList;

@@ -14,6 +14,7 @@ public interface ProductService {
     ProductEntity updateProduct( Product product);
     List<ProductEntity> getAllMenProducts();
     List<ProductEntity> getAllWomenProducts();
+    List<ProductEntity> getAllBabyProducts();
     List<ProductEntity> getAllProducts();
 //    void saveImage(ImageEntity image);
 //
