@@ -13,6 +13,7 @@ public interface ProductService {
     ProductEntity updateProduct(File file, Product product);
     ProductEntity updateProduct( Product product);
     List<ProductEntity> getAllMenProducts();
+    List<ProductEntity> getAllWomenProducts();
     List<ProductEntity> getAllProducts();
 //    void saveImage(ImageEntity image);
 //

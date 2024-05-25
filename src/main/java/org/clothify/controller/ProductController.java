@@ -65,4 +65,9 @@ public class ProductController {
         return service.getAllMenProducts();
     }
 
+    @GetMapping("/getProducts/women")
+    public List<ProductEntity> getAllWomenProducts(){
+        return service.getAllWomenProducts();
+    }
+
 }
