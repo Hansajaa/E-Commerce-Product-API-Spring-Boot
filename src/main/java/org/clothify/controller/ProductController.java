@@ -60,4 +60,9 @@ public class ProductController {
         return ResponseEntity.ok().body(service.getAllProducts());
     }
 
+    @GetMapping("/getProducts/men")
+    public List<ProductEntity> getAllMenProducts(){
+        return service.getAllMenProducts();
+    }
+
 }

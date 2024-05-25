@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.GeneralSecurityException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -105,6 +106,13 @@ public class ProductServiceImpl implements ProductService {
     public ProductEntity updateProduct(Product product) {
         ProductEntity entity = mapper.map(product, ProductEntity.class);
         return repository.save(entity);
+    }
+
+    @Override
+    public List<ProductEntity> getAllMenProducts() {
+        List<ProductEntity> menProducts = repository.findAllByCategory("Men");
+        return menProducts;
+
     }
 
     @Override
