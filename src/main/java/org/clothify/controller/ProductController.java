@@ -75,4 +75,9 @@ public class ProductController {
         return service.getAllBabyProducts();
     }
 
+    @GetMapping("/getProducts/kids")
+    public List<ProductEntity> getAllKidsProducts(){
+        return service.getAllKidsProducts();
+    }
+
 }
