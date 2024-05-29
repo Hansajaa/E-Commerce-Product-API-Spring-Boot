@@ -54,6 +54,11 @@ public class ProductController {
         }
     }
 
+    @DeleteMapping("/deleteById/{id}")
+    public Boolean deleteProduct(@PathVariable Long id){
+        return service.deleteProductById(id);
+    }
+
 
     @GetMapping("get-all")
     public ResponseEntity<List<ProductEntity>> getAllProducts(){

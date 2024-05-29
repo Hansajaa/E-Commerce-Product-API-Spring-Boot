@@ -109,6 +109,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public Boolean deleteProductById(Long id) {
+        repository.deleteById(id);
+        return true;
+    }
+
+    @Override
     public List<ProductEntity> getAllMenProducts() {
         List<ProductEntity> menProducts = repository.findAllByCategory("Men");
         return menProducts;

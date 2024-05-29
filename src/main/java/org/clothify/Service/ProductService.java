@@ -12,6 +12,7 @@ public interface ProductService {
     ProductEntity addProduct(Product product);
     ProductEntity updateProduct(File file, Product product);
     ProductEntity updateProduct( Product product);
+    Boolean deleteProductById(Long id);
     List<ProductEntity> getAllMenProducts();
     List<ProductEntity> getAllWomenProducts();
     List<ProductEntity> getAllBabyProducts();
