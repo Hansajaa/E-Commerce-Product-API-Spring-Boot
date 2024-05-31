@@ -19,6 +19,7 @@ import java.util.Set;
 @RequestMapping("api/v1/product")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin
 public class ProductController {
 
     final ProductService service;
@@ -37,21 +38,8 @@ public class ProductController {
     }
 
     @PutMapping("/put")
-    public ProductEntity updateProduct(@RequestParam("file") MultipartFile file, @ModelAttribute Product product){
-
-        if(file.isEmpty()){
-            return service.updateProduct(product);
-        }
-
-        try {
-            File tempFile = File.createTempFile("temp",null);
-            file.transferTo(tempFile);
-
-            return service.updateProduct(tempFile,product);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
+    public ProductEntity updateProduct(@RequestBody Product product){
+        return service.updateProduct(product);
     }
 
     @DeleteMapping("/deleteById/{id}")

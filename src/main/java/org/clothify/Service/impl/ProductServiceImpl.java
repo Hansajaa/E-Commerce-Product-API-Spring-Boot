@@ -26,6 +26,7 @@ import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -103,9 +104,24 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductEntity updateProduct(Product product) {
-        ProductEntity entity = mapper.map(product, ProductEntity.class);
-        return repository.save(entity);
+    public ProductEntity updateProduct(Product product){
+        Optional<ProductEntity> productEntity = repository.findById(product.getId());
+
+        if (productEntity.isPresent()){
+            ProductEntity entity = productEntity.get();
+
+            entity.setName(product.getName());
+            entity.setCategory(product.getCategory());
+            entity.setDescription(product.getDescription());
+            entity.setPrice(product.getPrice());
+            entity.setQuantity(product.getQuantity());
+
+
+            return repository.save(entity);
+        }
+
+        return null;
+
     }
 
     @Override
