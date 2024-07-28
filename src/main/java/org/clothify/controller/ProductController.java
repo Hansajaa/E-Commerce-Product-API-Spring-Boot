@@ -34,6 +34,8 @@ public class ProductController {
         File tempFile = File.createTempFile("temp",null);
         file.transferTo(tempFile);
 
+        product.setProductID(service.getNewProductID());
+
         return service.addProduct(tempFile,product);
     }
 
