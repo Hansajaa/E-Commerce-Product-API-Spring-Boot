@@ -18,6 +18,7 @@ public interface ProductService {
     List<ProductEntity> getAllBabyProducts();
     List<ProductEntity> getAllKidsProducts();
     List<ProductEntity> getAllProducts();
+    String getNewProductID();
 //    void saveImage(ImageEntity image);
 //
 //    byte[] getImageById(Long id);

@@ -160,4 +160,17 @@ public class ProductServiceImpl implements ProductService {
         List<ProductEntity> entityList = repository.findAll();
         return entityList;
     }
+
+    @Override
+    public String getNewProductID() {
+        String lastProductID = repository.findLastId();
+        if(lastProductID == null) {
+            return "P-000001";
+        }
+
+        Integer num = Integer.parseInt(lastProductID.split("-")[1]);
+        num++;
+        String newProductID = String.format("P-%06d",num);
+        return newProductID;
+    }
 }

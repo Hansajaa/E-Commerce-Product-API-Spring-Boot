@@ -73,4 +73,8 @@ public class ProductController {
         return service.getAllKidsProducts();
     }
 
+    @GetMapping("/getNewProductID")
+    public String getNewProductID(){
+        return service.getNewProductID();
+    }
 }
