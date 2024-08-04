@@ -23,7 +23,8 @@ public class ProductEntity {
     private Double price;
     private String category;
     private String imageUrl;
+    private int cartQty;
 
-    @ManyToMany(mappedBy = "items")
-    private Set<OrderEntity> orders;
+    @OneToMany(mappedBy = "product")
+    private Set<OrderDetail> orderDetails;
 }

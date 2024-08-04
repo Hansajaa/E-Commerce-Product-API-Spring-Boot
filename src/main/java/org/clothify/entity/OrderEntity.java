@@ -17,21 +17,18 @@ public class OrderEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Date date;
+    private String userName;
+    private String date;
     private Double total;
     private Double discount;
     private String status;
     private String paymentMethod;
+    private String shippingAddress1;
+    private String shippingAddress2;
+    private String postalCode;
     private String shippingMethod;
-    private boolean isPayed;
+    private boolean isPaid;
 
-    @ManyToMany
-    @JoinTable(name = "order_detail",
-    joinColumns = {
-            @JoinColumn(name = "order_id")
-    },
-    inverseJoinColumns = {
-            @JoinColumn(name = "item_id")
-    })
-    private Set<ProductEntity> items;
+    @OneToMany(mappedBy = "order")
+    private Set<OrderDetail> orderDetails;
 }

@@ -12,12 +12,16 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Order {
-    private Date date;
+    private String userName;
+    private String date;
     private Double total;
     private Double discount;
     private String status;
     private String paymentMethod;
     private String shippingMethod;
-    private boolean isPayed;
+    private String shippingAddress1;
+    private String shippingAddress2;
+    private String postalCode;
+    private boolean isPaid;
     private Set<ProductEntity> items;
 }
